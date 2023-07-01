@@ -27,10 +27,14 @@
             <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
             <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
         </header>
-
-        <form id="login-form">
-            <input type="text" placeholder="Email or phone number"/>
-            <input type="password" placeholder="Password"/>
+<!--
+    action은 이거 누르면 어디로 보내달라하는 기능
+    method는 2가지 방식으로 쓸 수 있다: POST and GET
+    POST는 서버에 보내는 서버통신, GET은 보안에 취약하다
+-->
+        <form action="friends.html" method="get" id="login-form">
+            <input name="username" type="text" placeholder="Email or phone number"/>
+            <input name="password" type="password" placeholder="Password"/>
             <input type="submit" value="Log in"/>
             <a href="#">Find KoKoa Account or Password</a>
         </form>
