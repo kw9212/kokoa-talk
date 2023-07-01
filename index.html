@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Kokoa Clone</title>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fa-solid fa-battery-full fa-lg"></i>
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+        </div>
+
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+            <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+        </header>
+<!--
+    action은 이거 누르면 어디로 보내달라하는 기능
+    method는 2가지 방식으로 쓸 수 있다: POST and GET
+    POST는 서버에 보내는 서버통신, GET은 보안에 취약하다
+-->
+        <form action="friends.html" method="get" id="login-form">
+            <input name="username" type="text" placeholder="Email or phone number"/>
+            <input name="password" type="password" placeholder="Password"/>
+            <input type="submit" value="Log in"/>
+            <a href="#">Find KoKoa Account or Password</a>
+        </form>
+
+        <script 
+        src="https://kit.fontawesome.com/7e9ed8cd58.js" 
+        crossorigin="anonymous">
+        </script>
+        
+    </body>
+    </html>
+
+<!--
+    6.1
+    mac shortcut in VS code
+    duplicate line: Option + Shift + downarrow
+
+    Column이라는 이름은 too generic so 클래스 이름을 저렇게 지정.
+
+    6.2
+    BEM: Block, Element, Modifier
+    https://css-tricks.com/bem-101/ 여기를 참고할 것.
+    실전에서는 class랑 id 어떤 걸 썼는지 헷갈려서 웬만하면 모두 class로 통일
+
+    6.3
+    아이콘 사이트: https://heroicons.com/
+    https://fontawesome.com/
+    svg; math, 좌표로 되어있는 태그
+    
+    script tag는 항상! body 닫기 전 마지막에 있어야 한다.
+
+    6.4
+    마우스로 option key를 누른채 찍으면 한번에 여러 줄 입력가능.
+    링크는 많이 만들 것이기 때문에 id를 설정하지 않고 form에 같이 넣는다.
+
+    6.5
+    본격적으로 CSS 파일을 추가해본다.
+    폰트는 https://fonts.google.com/ 이곳을 참고
+    원하는 폰트를 고르면 css import ㄱul이랑
+    body에 적용할 폰트 형식을 준다. 하지만 너무 많은 폰트를 선택하지 말고 될 수 있으면 쓸 것만 고르자. Otherwise, the program can be too heavy.
+
+    6.6
+    HTML은 자동으로 margin을 잡는데 
+    Reset css는 대부분의 태그에 margin, padding, border을 0으로 만들어 준다.
+-->

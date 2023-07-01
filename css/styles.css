@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+  CSS파일도 여러 CSS파일을 저렇게 모아놓고 모아놓는 형태로 하면 더 깔끔
+
+  6.7
+  default color는 black이다. 
+  따라서 color: inherit는 parent color인 black을 받겠다는 의미다.
+
+
+*/
